@@ -1,5 +1,6 @@
 package wizard_management;
 import behaviours.Flyable;
+import behaviours.Protector;
 
 public class Wizard {
   String name;
@@ -24,6 +25,10 @@ public class Wizard {
 
   public void setRide(Flyable ride){
     this.ride = ride;
+  }
+
+  public String callOnProtector(Protector protector){
+    return protector.protect();
   }
 
 }
