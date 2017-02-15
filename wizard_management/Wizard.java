@@ -31,4 +31,12 @@ public class Wizard {
     return protector.protect();
   }
 
+  public String mopFloor(Mop mop){
+    return "The floor gleams!";
+  }
+
+  public String sweepFloor(){
+    Broomstick ride = (Broomstick) this.ride;
+    return this.name + "'s " + ride.brand + " has carefully rearranged the dust on the floor.";
+  }
 }

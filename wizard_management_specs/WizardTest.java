@@ -54,10 +54,22 @@ public class WizardTest {
   }
 
   @Test
-  public void canCallOnDragon(){
+  public void canCallOnProtectors(){
     Dragon dragon = new Dragon("Erik");
     Ogre ogre = new Ogre("Brian");
     assertEquals("Beating its massive wings, the dragon immolates its foes with its fiery breath.", wizard.callOnProtector(dragon));
     assertEquals("The ogre smashes his adversaries over the head with its massive ogre fists", wizard.callOnProtector(ogre));
+  }
+
+  @Test
+  public void canMopFloor(){
+    Mop mop = new Mop("Smart Price");
+
+    assertEquals("The floor gleams!", wizard.mopFloor(mop));
+  }
+
+  @Test
+  public void canSweep(){
+    assertEquals("Toby's Nimbus has carefully rearranged the dust on the floor.", wizard.sweepFloor());
   }
 }
